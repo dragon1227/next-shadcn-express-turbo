@@ -6,11 +6,12 @@ const apiTest = async () => {
   try {
     noStore()
     const response = await fetch(process.env.NEXT_PUBLIC_API_URL + "/api/");
-    const data = await response.json() as T_Workspace | undefined;
-    return data
+    const data = await response.json()
+    if (!data) throw new Error(`Invalid response`)
+    return data as T_Workspace
   } catch (err) {
     console.error(err);
-    return undefined
+    throw err
   }
 }
 
