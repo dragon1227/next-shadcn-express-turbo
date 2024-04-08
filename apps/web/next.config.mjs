@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  reactStrictMode: true,
+  output: "standalone",
+  transpilePackages: ["ui"],
+};
 
 export default nextConfig;
