@@ -1,0 +1,20 @@
+{
+  "name": "next-shadcn-express-turbo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv-cli": "^7.4.1",
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "module": "./dist",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -b --watch",
+    "lint": "eslint --fix --quiet \"**/*.ts*\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsconfig": "workspace:^",
+    "types": "workspace:^",
+    "typescript": "^5.4.4"
+  }
+}
