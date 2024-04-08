@@ -4,21 +4,21 @@
   "extends": "./base.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "allowJs": true,
-    "declaration": false,
-    "declarationMap": false,
-    "incremental": true,
     "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
     "noEmit": true,
-    "resolveJsonModule": true,
-    "strict": false,
-    "target": "es5",
-		"paths": {
-			"@/*": ["./src/*"]
-		}
-  },
-  "include": ["src", "next-env.d.ts"],
-  "exclude": ["node_modules"],
+    "paths": {
+      "@/*": ["./*"],
+      "@ui/*": ["../../packages/ui/src/*"],
+      "@ui/lib/*": ["../../packages/ui/src/lib/*"],
+      "@ui/icons": ["../../packages/ui/src/icons"],
+      "@ui/style/*": ["../../packages/ui/src/style/*"],
+      "@ui/providers/*": ["../../packages/ui/src/providers/*"],
+      "@ui/components/*": ["../../packages/ui/src/components/ui/*"],
+      "@ui/components/ui/*": ["../../packages/ui/src/components/ui/*"],
+      "@ui/components/shared/*": ["../../packages/ui/src/components/shared/*"]
+    }
+  }
 }

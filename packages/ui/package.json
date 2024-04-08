@@ -2,9 +2,11 @@
   "name": "ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "module": "./src",
+  "main": "./src/index.ts",
+  "types": "./dist",
   "scripts": {
-    "ui:add": "npx shadcn-ui@latest add",
+    "ui:add": "pnpm dlx shadcn-ui@latest add",
     "lint": "eslint \"**/*.ts*\""
   },
   "keywords": [],

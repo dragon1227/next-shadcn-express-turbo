@@ -1,6 +1,5 @@
 "use client"
 
-import { Button } from "ui/components/ui/button"
 import AdminLayoutNavbarComponent from "./navbar"
 import AdminLayoutSidebarComponent from "./sidebar"
 import { ReactNode } from "react"

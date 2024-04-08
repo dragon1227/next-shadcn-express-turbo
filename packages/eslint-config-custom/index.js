@@ -16,4 +16,25 @@ module.exports = {
       presets: [require.resolve("next/babel")],
     },
   },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        project,
+      },
+    },
+  },
+  ignorePatterns: [
+    // Ignore dotfiles
+    ".*.js",
+    "node_modules/",
+  ],
+  globals: {
+    React: true,
+    JSX: true,
+  },
+  env: {
+    node: true,
+    browser: true,
+  },
+  overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
 };

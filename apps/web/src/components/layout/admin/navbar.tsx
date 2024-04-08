@@ -12,17 +12,17 @@ import {
   Search,
   ShoppingCart,
   Users,
-} from "ui/icons"
+} from "@ui/icons"
 
-import { Badge } from "ui/components/ui/badge"
-import { Button } from "ui/components/ui/button"
+import { Badge } from "@ui/components/ui/badge"
+import { Button } from "@ui/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "ui/components/ui/card"
+} from "@ui/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,11 +30,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "ui/components/ui/dropdown-menu"
-import { Input } from "ui/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "ui/components/ui/sheet"
+} from "@ui/components/ui/dropdown-menu"
+import { Input } from "@ui/components/ui/input"
+import { Sheet, SheetContent, SheetTrigger } from "@ui/components/ui/sheet"
 
-import ThemeSwitcherComponent from "ui/components/shared/theme-switcher"
+import ThemeSwitcherComponent from "@ui/components/shared/theme-switcher"
 
 export default function AdminLayoutNavbarComponent() {
   return (

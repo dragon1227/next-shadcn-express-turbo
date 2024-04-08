@@ -10,9 +10,11 @@ app.use(morgan("dev"));
 
 app.use(urlencoded({ extended: true }));
 app.use(json());
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 
-const port = process.env.API_PORT || 5001;
+const port = process.env.API_PORT || 8000;
 
 app.listen(port, () => {
   console.log(`api running at port ${port}`);

@@ -8,7 +8,8 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "../../packages/ui/components/**/*.{ts,tsx}",
+    "../../packages/ui/src/components/**/*.{ts,tsx}",
+    "../../packages/ui/src/providers/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
