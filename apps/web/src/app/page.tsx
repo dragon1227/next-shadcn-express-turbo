@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { unstable_noStore as noStore } from 'next/cache';
 import { type T_Workspace } from "types"
-import DefaultLayoutComponent from "../components/layout/default";
+import DefaultLayoutComponent from "@/components/layout/default";
 
 const apiTest = async () => {
   try {

@@ -9,16 +9,5 @@
     "allowJs": true,
     "jsx": "preserve",
     "noEmit": true,
-    "paths": {
-      "@/*": ["./*"],
-      "@ui/*": ["../../packages/ui/src/*"],
-      "@ui/lib/*": ["../../packages/ui/src/lib/*"],
-      "@ui/icons": ["../../packages/ui/src/icons"],
-      "@ui/style/*": ["../../packages/ui/src/style/*"],
-      "@ui/providers/*": ["../../packages/ui/src/providers/*"],
-      "@ui/components/*": ["../../packages/ui/src/components/ui/*"],
-      "@ui/components/ui/*": ["../../packages/ui/src/components/ui/*"],
-      "@ui/components/shared/*": ["../../packages/ui/src/components/shared/*"]
-    }
   }
 }

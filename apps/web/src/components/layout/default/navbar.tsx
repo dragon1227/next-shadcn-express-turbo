@@ -19,7 +19,7 @@ import {
 } from "@ui/components/ui/dropdown-menu"
 import { Input } from "@ui/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@ui/components/ui/sheet"
-import { siteRoutes } from "../../../config/routes"
+import { siteRoutes } from "@/config/routes"
 
 export default function DefaultLayoutNavbarComponent() {
   return (
