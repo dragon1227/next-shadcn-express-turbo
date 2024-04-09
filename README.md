@@ -2,6 +2,15 @@
 
 This is a starter template for Turborepo with nextjs, express and shadcnui.
 
+![image](https://github.com/dragon1227/next-shadcn-express-turbo/assets/122885050/a1fd19bb-3a74-478c-a543-87b418702711)
+
+![image](https://github.com/dragon1227/next-shadcn-express-turbo/assets/122885050/00de456d-8513-42de-979f-aa629dd62823)
+
+![image](https://github.com/dragon1227/next-shadcn-express-turbo/assets/122885050/7c475b46-f71f-4a19-83f9-0fd882a0d3c7)
+
+![image](https://github.com/dragon1227/next-shadcn-express-turbo/assets/122885050/4e42d798-1bb4-48a5-8c8e-5006116b30bc)
+
+
 ## Using this example
 
 Run the following command:
