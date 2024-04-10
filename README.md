@@ -46,7 +46,9 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 Run the following command:
 
 ```sh
-npm run ui:add accordion --workspace=ui
+pnpm run ui:add <YOUR_COMPONENT>
+
+pnpm run ui:add <YOUR_COMPONENT> --overwrite // to overwrite your components
 ```
 
 ### Utilities

@@ -2,7 +2,7 @@ import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { ChevronRight, MoreHorizontal } from "lucide-react"
 
-import { cn } from "../../lib/utils"
+import { cn } from "@/lib/utils"
 
 const Breadcrumb = React.forwardRef<
   HTMLElement,
@@ -98,7 +98,7 @@ const BreadcrumbEllipsis = ({
     className={cn("flex h-9 w-9 items-center justify-center", className)}
     {...props}
   >
-    <MoreHorizontal className="w-4 h-4" />
+    <MoreHorizontal className="h-4 w-4" />
     <span className="sr-only">More</span>
   </span>
 )
