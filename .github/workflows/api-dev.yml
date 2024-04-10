@@ -101,7 +101,7 @@ jobs:
           metadata:
             name: api-config
           data:
-            API_PORT: $API_PORT
+            API_PORT: "${{env.API_PORT}}"
       # Deploy the Docker image to the GKE cluster
     - name: Deploy
       working-directory: .kubernetes/api

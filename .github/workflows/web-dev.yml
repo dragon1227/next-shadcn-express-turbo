@@ -31,7 +31,7 @@ env:
   DEPLOYMENT_NAME: web
   REPOSITORY: ${{vars.GAR_REPOSITORY}}
   IMAGE: web
-  $NEXT_PUBLIC_API_URL: "https://<YOUR-DOMAIN.com>"
+  NEXT_PUBLIC_API_URL: "https://<YOUR-DOMAIN.com>"
 
 jobs:
   setup-build-publish-deploy:
@@ -103,7 +103,7 @@ jobs:
           metadata:
             name: web-config
           data:
-            NEXT_PUBLIC_API_URL: "$NEXT_PUBLIC_API_URL"
+            NEXT_PUBLIC_API_URL: "${{env.NEXT_PUBLIC_API_URL}}"
       # Deploy the Docker image to the GKE cluster
     - name: Deploy
       working-directory: .kubernetes/web
