@@ -1,0 +1,41 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "api"
+  labels:
+    app: "api"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "api"
+  template:
+    metadata:
+      labels:
+        app: "api"
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: api
+        image: api
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8000
+          name: api
+        envFrom:
+        - configMapRef:
+            name: api-config
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
