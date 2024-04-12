@@ -2,9 +2,9 @@
 
 import Link from "next/link"
 
-import { Button } from "@ui/components/ui/button"
-import { Input } from "@ui/components/ui/input"
-import { Label } from "@ui/components/ui/label"
+import { Button } from "ui/components/ui/button"
+import { Input } from "ui/components/ui/input"
+import { Label } from "ui/components/ui/label"
 
 export default function SignInPage() {
   return (

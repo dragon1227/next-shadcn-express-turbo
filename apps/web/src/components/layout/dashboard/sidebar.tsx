@@ -8,13 +8,13 @@ import {
   Settings,
   ShoppingCart,
   Users2,
-} from "@ui/icons"
+} from "ui/icons"
 
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@ui/components/ui/tooltip"
+} from "ui/components/ui/tooltip"
 
 import Link from "next/link"
 

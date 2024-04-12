@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import ThemeProvider from "@ui/providers/theme-provider"
-import ShadcnProvider from "@ui/providers/shadcn-provider"
+import ThemeProvider from "ui/providers/theme-provider"
+import ShadcnProvider from "ui/providers/shadcn-provider"
 
 export default function Providers({ children }: { children: ReactNode }) {
   return (

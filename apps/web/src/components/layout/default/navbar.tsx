@@ -6,9 +6,9 @@ import {
   Menu,
   Package2,
   Search,
-} from "@ui/icons"
+} from "ui/icons"
 
-import { Button } from "@ui/components/ui/button"
+import { Button } from "ui/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,9 +16,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@ui/components/ui/dropdown-menu"
-import { Input } from "@ui/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@ui/components/ui/sheet"
+} from "ui/components/ui/dropdown-menu"
+import { Input } from "ui/components/ui/input"
+import { Sheet, SheetContent, SheetTrigger } from "ui/components/ui/sheet"
 import { siteRoutes } from "@/config/routes"
 
 export default function DefaultLayoutNavbarComponent() {

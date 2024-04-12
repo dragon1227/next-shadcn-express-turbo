@@ -8,17 +8,17 @@ import {
   Package2,
   ShoppingCart,
   Users,
-} from "@ui/icons"
+} from "ui/icons"
 
-import { Badge } from "@ui/components/ui/badge"
-import { Button } from "@ui/components/ui/button"
+import { Badge } from "ui/components/ui/badge"
+import { Button } from "ui/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card"
+} from "ui/components/ui/card"
 
 export default function AdminLayoutSidebarComponent() {
   return (

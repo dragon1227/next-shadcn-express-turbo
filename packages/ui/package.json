@@ -2,12 +2,12 @@
   "name": "ui",
   "version": "1.0.0",
   "description": "",
-  "module": "./src",
   "main": "./src/index.ts",
-  "types": "./dist",
+  "types": "./src/index.ts",
   "scripts": {
     "ui:add": "pnpm dlx shadcn-ui@latest add",
-    "lint": "eslint \"**/*.ts*\""
+    "lint": "eslint \"**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "keywords": [],
   "author": "",
@@ -39,5 +39,14 @@
     "next-themes": "^0.3.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7"
+  },
+  "exports": {
+    "./global.css": "./src/style/global.css",
+    "./postcss.config": "./postcss.config.js",
+    "./tailwind.config": "./tailwind.config.ts",
+    "./lib/*": "./src/lib/*.ts",
+    "./icons": "./src/icons/index.ts",
+    "./components/*": "./src/components/*.tsx",
+    "./providers/*": "./src/providers/*.tsx"
   }
 }

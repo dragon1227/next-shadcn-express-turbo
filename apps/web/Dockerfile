@@ -3,9 +3,6 @@ FROM node:18-alpine AS base
 # This Dockerfile is copy-pasted into our main docs at /docs/handbook/deploying-with-docker.
 # Make sure you update both files!
 
-ARG NEXT_PUBLIC_API_URL
-ENV NEXT_PUBLIC_API_URL ${NEXT_PUBLIC_API_URL}
-
 RUN npm install -g turbo pnpm husky
 
 FROM base AS builder
@@ -33,6 +30,9 @@ RUN pnpm install --filter=web
 # Build the project
 COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
+
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
 
 RUN pnpm build --filter=web
 
